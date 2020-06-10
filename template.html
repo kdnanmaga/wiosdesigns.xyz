@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  <title>{{title}} - WIOS Designs</title>
+  <meta property="og:title" content="{{title}} - WIOS Designs" />
+  <meta name="twitter:title" content="{{title}} - WIOS Designs" />
+
+  <meta name="description" content="{{description}}">
+  <meta property="og:description" content="{{description}}">
+  <meta name="twitter:description" content="{{description}}">
+  
+  <meta property="og:url" content="https://wiosdesigns.xyz/{{filename}}" />
+
+  <meta property="og:image" content="{{image}}">
+  <meta property="twitter:image" content="{{image}}">
+  <meta name="twitter:image:alt" content="Background Image">
+  
+  <meta property="og:type" content="website" />
+  <meta name="twitter:card" content="summary"></meta>
+  
+  
+  <meta name="keywords" content="{{keywords}}"/>
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8">
+  <meta name="theme-color" content="#030708">
+  
+  <link rel="shortcut icon" href="/assets/favicon.png"/>
+  <style>
+    * {box-sizing: border-box;}
+
+    /* Color Scheme */
+    :root{
+      --darker: #030708;
+      --dark: #040b0b;
+      --theme: #0060a0;
+      --accent: #00ff99;
+      --light: #e0f3ff;
+      --lighter: #ffffff;
+    }
+
+    /* Fonts */
+    @font-face {
+      font-family: main;
+      font-display: swap;
+      src: url(/assets/hr.ttf);
+    }
+    body {
+      font-family: main;
+      font-size: 1rem;
+      padding: 0;
+      margin: 0;
+      background: var(--dark);
+      color: var(--light);
+      text-align: center;
+    }
+    header{
+      display: grid;
+      grid-template-columns: auto 1fr;
+      background: var(--darker);
+      justify-items: right;
+      position: fixed;
+      max-height: 4.2rem;
+      top: 0;
+      left: 0;
+      width: 100%;
+      padding: 1rem;
+      align-items: center;
+      z-index: 20;
+    }
+    .header-icon{height: 2rem; width: auto;}
+    .header-home-link{text-decoration:none;padding:0;display:inline-block;}
+    header nav{
+      text-align: right;
+    }
+    header a{
+      color: var(--theme);
+      text-decoration: none;
+      padding: 0;
+      margin: 0;
+      vertical-align: 0.3rem;
+    }
+    main{
+      margin: 0;
+      margin-top: 4.2rem;
+      width: 100%;
+      display: inline-block;
+      max-width: 20cm;
+      padding: 0;
+      background: var(--dark);
+      border-radius: 1rem;
+      text-align: left;
+      font-size: 1.25rem;
+    }
+    h1,h2,h3,h4,h5,h6{
+      font-weight: 200;
+      color: var(--theme);
+    }
+    main>p>img{
+      width: 100%;
+      z-index: 0;     
+    }
+    ul{list-style:none;padding:0;}
+    ul>li::before{
+      content: "•";
+      color: var(--accent);
+      margin-right: 1rem;
+    }
+    ol{list-style:none;padding:0;counter-reset:ul-counter;}
+    ol>li::before{
+      content: counter(ul-counter);
+      counter-increment: ul-counter;
+      color: var(--accent);
+      margin-right: 1rem;
+    }
+    blockquote{
+      padding: 0;
+      margin: 0;
+    }
+    blockquote>p{
+      background: var(--darker);
+      border-left: 0.2rem solid var(--accent);
+      padding: 0.5rem 1rem;
+    }
+    main a{
+      color: var(--accent);
+    }
+    main>*{
+      padding: 0 1rem;
+    }
+    p.img{
+      padding: 0;
+      color: var(--lighter);
+      text-align: center;
+    }
+    a.btn{
+      text-decoration: none;
+      display: inline-block;
+      padding: 0.3rem 1rem 0.2rem 1rem;
+      border-radius: 10rem;
+      background: var(--accent);
+      color: var(--darker);
+      font-size: 80%;
+    }
+  </style>
+  
+</head>
+<body>
+  <header>
+    <a href="/" class="header-home-link">
+      <img class="header-icon" src="/assets/wiostext.png">
+    </a>
+    <nav>
+      <a href="mailto:hi@wiosdesigns.xyz">hi@wiosdesigns.xyz</a>
+    </nav>
+  </header>
+  
+  <main>
+    {{main_html|safe}}
+  </main>
+</body>
+</html>
+
+

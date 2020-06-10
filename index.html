@@ -2,15 +2,15 @@
 <html lang="en">
 <head>
   
-  <title>roadRunner - Responsive CSS Grid Template</title>
-  <meta property="og:title" content="roadRunner" />
-  <meta name="twitter:title" content="roadRunner" />
+  <title>WIOS Designs</title>
+  <meta property="og:title" content="WIOS Designs" />
+  <meta name="twitter:title" content="WIOS Designs" />
 
-  <meta name="description" content="Reponsive Static Site Template made with CSS Grid. Get it now.">
-  <meta property="og:description" content="Reponsive Static Site Template made with CSS Grid. Get it now.">
-  <meta name="twitter:description" content="Reponsive Static Site Template made with CSS Grid. Get it now.">
+  <meta name="description" content="A digital enablement company that designs, develops and delivers products & services">
+  <meta property="og:description" content="A digital enablement company that designs, develops and delivers products & services">
+  <meta name="twitter:description" content="A digital enablement company that designs, develops and delivers products & services">
   
-  <meta property="og:url" content="https://roadRunner.wiosdesigns.xyz" />
+  <meta property="og:url" content="https://wiosdesigns.xyz" />
 
   <meta property="og:image" content="/assets/meta_bg.webp">
   <meta property="twitter:image" content="/assets/meta_bg.webp">
@@ -20,17 +20,72 @@
   <meta name="twitter:card" content="summary"></meta>
   
   
-  <meta name="keywords" content="css grid, template, boilerplate, responsive, WIOS Designs"/>
+  <meta name="keywords" content="WIOS Designs, Digital, Transformation, Product, Design, User, Experience, Interface, Chatbot, Web, App, Software, Architecture, Website, Consulting, DevOps, Cybersecurity, Small, Business, Data, Analytics"/>
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta charset="utf-8">
-  <meta name="theme-color" content="#05080a">
+  <meta name="theme-color" content="#030708">
   
   <link rel="shortcut icon" href="/assets/favicon.png"/>
   <link rel="stylesheet" type="text/css" href="/css/roadrunner.css"/>
   
+  <script>
+    function mousemoved(e){
+      var logo = document.querySelector('#coverlogo');
+
+      var x2 = e.clientX;
+      var y2 = e.clientY;
+      var x1 = logo.offsetLeft + logo.offsetWidth/2;
+      var y1 = logo.offsetTop + logo.offsetHeight/2;
+      var t = 63.5 + 180 * Math.atan((y2-y1)/(x2-x1))/3.1415;
+      if(x2<x1){t+=180;}
+      console.log('hi');
+      logo.style.transform = `rotate(${t}deg)`
+    }
+  </script>
+  <style>
+    /* Slideshow */
+    [id^="gridslide"]{
+      display: inline-grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr;
+      padding: 0;
+      align-items: start;
+      justify-items: start;
+    }
+    [id^="gridslide"]>*{
+      width: 100%;
+      grid-area: 1 / 1 / 2 / 2;
+      animation: slide 12s linear infinite;
+      opacity: 0;
+      border-radius: 2mm;
+      text-align: left;
+    }
+
+    [id^="gridslide"]>*:nth-child(1){
+      animation-delay: 0s;
+    }
+    [id^="gridslide"]>*:nth-child(2){
+      animation-delay: 3s;
+    }
+    [id^="gridslide"]>*:nth-child(3){
+      animation-delay: 6s;
+    }
+    [id^="gridslide"]>*:nth-child(4){
+      animation-delay: 9s;
+    }
+
+    @keyframes slide{
+      0%{opacity: 0;}
+      5%{opacity: 1;}
+      20%{opacity: 1;}
+      25%{opacity: 0;}
+      100%{opacity: 0;}
+    }
+
+  </style>
 </head>
-<body>
+<body onmousemove="mousemoved(event);">
   <div class="home-bg">
     <div class="home-bg-image"></div>
   </div>
@@ -40,35 +95,102 @@
       <path style="fill: none; stroke:var(--theme); stroke-width: 5;stroke-linejoin: round; stroke-linecap: round;" d="M10 45 L50 55 L90 45"></path>
       <path style="fill: none; stroke:currentColor; stroke-width: 5;stroke-linejoin: round; stroke-linecap: round;" d="M10 70 L50 80 L90 70"></path>
     </symbol>
+    
   </svg>
   
-  <header>
-    <a href="" class="header-home-link">
-      <img class="header-icon" src="/assets/icon.png">
-    </a>
-    <input type="checkbox" id="menutoggle">
-    <label for="menutoggle">
-      <svg viewBox="0 0 100 100" class="fg-lighter">
-        <use xlink:href="#menu"></use>
-      </svg>
-    </label>
-    <nav>
-      <a href="https://wiosdesigns.xyz">WIOS Designs</a>
-      <a href="https://github.com/wiosdesigns/spicygrid/">GitHub</a>
-    </nav>
-  </header>
   
-  <section class="grid1 a-center fg-lighter">
-    <div class="col1" style="padding-top: 10rem;">
-      <img src="/assets/icon.png" loading="lazy" style="width: 90%; max-width: 100px; height: auto;">
-      <h1>roadRunner</h1>
-      <p>Reponsive Static Site Template made with CSS Grid</p>
-      <a class="btn" href="/docs.html">Docs</a>
+  <section class="grid5 fg-lighter" style="padding: 8vw 0 4vw 0; align-items: center;">
+    <div class="col1 large-only"></div>
+    <div class="col3 a-center">
+      <img id="coverlogo" src="/assets/icon.png" style="width: 5cm; max-width: 35vw;">
+      <h1 style="padding: 2.5mm 0; border-top: 0.5mm solid var(--accent); margin-top: 6mm; font-size: 200%;">
+        WIOS Designs
+      </h1>
+      <h2>A tech start-up for human beings</h2>
     </div>
+    <style>
+      #homecover a>h2{
+        display: inline-block;
+        margin: 3mm 4mm;
+        transition: color 0.2s;
+        font-family: main;
+      }
+      #homecover a:hover>h2{
+        color: var(--accent);
+      }
+    </style>
+    <div class="col1 large-only"></div>
   </section>
   
-  <section class="grid2 bg-light">
+  <section class="grid11 bg-dark" style="padding: 2rem 0;">
+    <div class="col1 large-only"></div>
+    <div class="col4 a-left">
+      <h2 style="line-height: 150%;">
+        We design, develop and deliver digital products & services
+        <div id="gridslide1" class="fg-theme">
+          <span>to make life easy.</span>
+          <span>to delight users.</span>
+          <span>to enable businesses.</span>
+          <span>to improve efficiency.</span>
+        </div>
+     </h2>   
+    </div>
+    <div class="col1 large-only"></div>
+    <div class="col4 a-left">
+      WIOS Designs is a digital enablement company.
+      We work with small & large businesses, organizations & individuals
+      to help them make the best use of 
+      digital firepower. We conceptualize, execute and implement 
+      innovations that work like magic.
+    </div>
+    <div class="col1 large-only"></div>
+    
   </section>
+  
+  <section class="grid10 bg-dark a-center" style="padding: 2rem 0;">
+    <div class="col10">
+      <h2 class="underline">Consultancy</h2>
+    </div>
+    
+    <div class="col1 large-only"></div>
+    <div class="col2">
+      UX/UI Design
+    </div>
+    <div class="col2">
+      Full Stack Development
+    </div>
+    <div class="col2">
+      Cybersecurity
+    </div>
+    <div class="col2">
+      Analytics & Data Visualization
+    </div>
+    <div class="col1 large-only"></div>
+    
+  </section>
+  
+  
+  <section class="grid10 bg-dark a-center" style="padding: 2rem 0;">
+    <div class="col10">
+      <h2 class="underline">Team</h2>
+    </div>
+    
+    <div class="col1 large-only"></div>
+    <div class="col2">
+      Apps & Websites
+    </div>
+    <div class="col2">
+      Enterprise Applications
+    </div>
+    <div class="col2">
+      Cybersecurity
+    </div>
+    <div class="col2">
+      Analytics & Data Visualization
+    </div> 
+    <div class="col1 large-only"></div>
+  </section>
+  
   
 </body>
 </html>

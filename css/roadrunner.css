@@ -2,11 +2,11 @@
 
 /* Color Scheme */
 :root{
-  --darker: #05080a;
-  --dark: #090e11;
-  --theme: #0050a0;
-  --accent: #49d49d;
-  --light: #e0ffff;
+  --darker: #030708;
+  --dark: #040b0b;
+  --theme: #0060a0;
+  --accent: #00ff99;
+  --light: #e0f3ff;
   --lighter: #ffffff;
 }
 
@@ -14,12 +14,12 @@
 @font-face {
   font-family: main;
   font-display: swap;
-  src: url(/assets/jost.otf);
+  src: url(/assets/hr.ttf);
 }
 @font-face {
   font-family: headings;
   font-display: swap;
-  src: url(/assets/mr.ttf);
+  src: url(/assets/hr.ttf);
 }
 
 /* ----------------- */
@@ -27,7 +27,7 @@
 /* --------------- */
 body {
   font-family: main;
-  font-size: 1rem;
+  font-size: 1.25rem;
   padding: 0;
   margin: 0;
   background: var(--light);
@@ -197,9 +197,13 @@ header>nav>a{
   }
 }
 
-h1,h2,h3,h4,h5,h6{font-family:headings,sans-serif;font-weight:200;}
-p{font-size: 125%;}
-.btn{display:inline-block;color: var(--accent);background:var(--darker);padding: 0.25rem 1rem;border-radius: 5rem;text-decoration: none;transition:background 0.2s,color 0.2s;}
-.btn:hover,.btn:focus{color:var(--darker);background:var(--accent);}
+h1,h2,h3,h4,h5,h6{font-family:headings,sans-serif;font-weight:200;padding:0;margin:0;}
+h1{font-size: 140%;font-family: main;}
+h2{font-size: 125%;}
+h3{font-size: 110%;}
 
+p{font-size: 125%;}
+.btn{border:0.1rem solid var(--accent);display:inline-block;color: var(--accent);background:var(--dark);padding: 0.35rem 1rem 0.15rem 1rem;border-radius: 5rem;text-decoration: none;transition:background 0.2s,color 0.2s;}
+.btn:hover,.btn:focus{color:var(--darker);background:var(--accent);}
+.underline{border-bottom: 0.1rem solid var(--accent); margin-bottom: 1rem; display: inline-block; width: auto; padding: 0.5rem 1rem;}
 
