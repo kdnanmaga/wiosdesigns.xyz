@@ -35,8 +35,8 @@
       --darker: #030708;
       --dark: #040b0b;
       --theme: #0060a0;
-      --accent: #00ff99;
-      --light: #e0f3ff;
+      --accent: #00cc7a;
+      --light: #ebf7ff;
       --lighter: #ffffff;
     }
 
@@ -60,8 +60,8 @@
       grid-template-columns: auto 1fr;
       background: var(--darker);
       justify-items: right;
-      position: fixed;
       max-height: 4.2rem;
+      position: fixed;
       top: 0;
       left: 0;
       width: 100%;
@@ -88,10 +88,20 @@
       display: inline-block;
       max-width: 20cm;
       padding: 0;
+      padding-bottom: 5rem;
       background: var(--dark);
       border-radius: 1rem;
       text-align: left;
       font-size: 1.25rem;
+    }
+    footer{
+      background: var(--theme);
+      color: var(--lighter);
+      padding: 1rem;
+      text-align: center;
+    }
+    footer>a{
+      color: inherit;
     }
     h1,h2,h3,h4,h5,h6{
       font-weight: 200;
@@ -159,6 +169,11 @@
   <main>
     {{main_html|safe}}
   </main>
+  
+  <footer>
+    © 2020 WIOS Designs, a unit of 
+    <a href="https://xpify.wiosdesigns.xyz/">Xpify Services Pvt. Ltd.</a>
+  </footer>
 </body>
 </html>
 

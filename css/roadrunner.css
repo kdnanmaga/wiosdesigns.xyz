@@ -5,8 +5,8 @@
   --darker: #030708;
   --dark: #040b0b;
   --theme: #0060a0;
-  --accent: #00ff99;
-  --light: #e0f3ff;
+  --accent: #00cc7a;
+  --light: #ebf7ff;
   --lighter: #ffffff;
 }
 
@@ -202,8 +202,17 @@ h1{font-size: 140%;font-family: main;}
 h2{font-size: 125%;}
 h3{font-size: 110%;}
 
-p{font-size: 125%;}
 .btn{border:0.1rem solid var(--accent);display:inline-block;color: var(--accent);background:var(--dark);padding: 0.35rem 1rem 0.15rem 1rem;border-radius: 5rem;text-decoration: none;transition:background 0.2s,color 0.2s;}
 .btn:hover,.btn:focus{color:var(--darker);background:var(--accent);}
 .underline{border-bottom: 0.1rem solid var(--accent); margin-bottom: 1rem; display: inline-block; width: auto; padding: 0.5rem 1rem;}
 
+footer{
+  background: var(--theme);
+  color: var(--lighter);
+  padding: 1rem;
+  text-align: center;
+}
+footer>a{
+  color: inherit;
+}
+    
