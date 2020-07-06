@@ -2,11 +2,11 @@
 
 /* Color Scheme */
 :root{
-  --darker: #030708;
-  --dark: #040b0b;
-  --theme: #0060a0;
-  --accent: #00cc7a;
-  --light: #ebf7ff;
+  --darker: #161e24;
+  --dark: #2e4b57;
+  --theme: #3ba0b6;
+  --accent: #3d768c;
+  --light: #7fb9c8;
   --lighter: #ffffff;
 }
 
@@ -111,7 +111,7 @@ div.home-bg{
   margin: 0;
 }
 div.home-bg-image{
-  background: url(/assets/home_bg.webp);
+  background: url(/assets/u19.png);
   background-size: cover;
   background-position: center center;
   min-width: 100vw;
