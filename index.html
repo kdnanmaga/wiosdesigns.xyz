@@ -24,7 +24,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta charset="utf-8">
-  <meta name="theme-color" content="#030708">
+  <meta name="theme-color" content="#161e24">
   
   <link rel="shortcut icon" href="/assets/favicon.png"/>
   <link rel="stylesheet" type="text/css" href="/css/roadrunner.css"/>
@@ -51,7 +51,7 @@
       grid-template-rows: 1fr;
       padding: 0;
       align-items: start;
-      justify-items: start;
+      justify-items: center;
     }
     [id^="gridslide"]>*{
       width: 100%;
@@ -59,7 +59,7 @@
       animation: slide 12s linear infinite;
       opacity: 0;
       border-radius: 2mm;
-      text-align: left;
+      text-align: center;
     }
 
     [id^="gridslide"]>*:nth-child(1){
@@ -110,8 +110,13 @@
       vertical-align: 0.3rem;
       font-size: 
     }
-    
-
+    .width60{
+      width: 60%;
+      height: auto;
+    }
+    .round-edges{
+      border-radius: 100rem;
+    }
   </style>
 </head>
 <body onmousemove="mousemoved(event);">
@@ -136,11 +141,11 @@
   </header>
   
   
-  <section class="grid5 fg-lighter" style="padding: 6rem 0 10vw 0; align-items: center;">
+  <section class="grid5 fg-lighter" style="padding: 22vh 0 15vh 0; align-items: center;">
     <div class="col1 large-only"></div>
     <div class="col3 a-center">
       <img id="coverlogo" src="/assets/icon.png" style="width: 5cm; max-width: 35vw;">
-      <h1 style="padding: 2.5mm 0; border-top: 0.5mm solid var(--accent); margin-top: 6mm; font-size: 200%;">
+      <h1 style="padding: 2.5mm 0; border-top: 0.5mm solid transparent; margin-top: 6mm; font-size: 200%;">
         WIOS Designs
       </h1>
     </div>
@@ -158,54 +163,83 @@
     <div class="col1 large-only"></div>
   </section>
   
-  <section class="grid11 bg-darker" style="padding: 2rem 0; align-items:center;">
-    <div class="col1 large-only"></div>
-    <div class="col4 a-left">
-      <h2 style="line-height: 150%;">
-        We design, develop and deliver digital products & services
-        <div id="gridslide1" class="fg-theme">
+  <section class="grid11 bg-darker" style="padding: 4rem 0; align-items:center;">
+    <div class="col2 large-only"></div>
+    <div class="col7 a-center">
+      <h2 style="line-height: 150%; text-align: center;">
+        We build and ship digital experiences
+        <br>
+        <div id="gridslide1" class="fg-theme a-center">
           <span>to make life easy.</span>
           <span>to delight users.</span>
           <span>to enable businesses.</span>
           <span>to improve efficiency.</span>
         </div>
-     </h2>   
+      </h2>   
+    </div>
+    <div class="col2 large-only"></div>
+    
+    <img class="col5" src="/assets/p7o.png"/>
+    <div class="col1 large-only"></div>
+        
+    <div class="col4 a-left">
+      <h2 class="underline paddingh0">About</h2>
+      <p>
+      WIOS Designs is a digital design studio based in Bengaluru, India.<br><br>
+      We work with businesses & individuals
+      to help them make the best use of 
+      digital firepower.
+      </p>
     </div>
     <div class="col1 large-only"></div>
+    
+  </section>
+    
+  <section class="grid11 bg-darker rtl" style="padding: 4rem 0; align-items:center;">
+    <div class="col1 large-only"></div>
+    <img class="col5" src="/assets/p8o.png"/>
+        
     <div class="col4 a-left">
+      <h2 class="underline paddingh0">Digital for all</h2>
       <p>
-      WIOS Designs is a digital enablement company.
-      We work with small & large businesses, organizations & individuals
-      to help them make the best use of 
-      digital firepower. We conceptualize, execute and implement 
-      innovations that work like magic.
+      Our core mission is to digitally enable businesses
+      at all levels - home based to global scale.
       </p>
     </div>
     <div class="col1 large-only"></div>
     
   </section>
   
-  <section class="grid10 bg-dark a-center" style="padding: 2rem 0;">
-    <div class="col10">
-      <h2 class="underline">Consultancy</h2>
-    </div>
-    <div class="col1 large-only"></div>
-    <div class="col2">
-      UX/UI Design
+  <section class="grid8 bg-darker a-center" style="padding: 2rem 0;">
+    <div class="col8">
+      <h2 class="underline">Our Services</h2>
     </div>
     <div class="col2">
-      Full Stack Development
+      <img class="width60 round-edges" src="/assets/p_uxo.png">
+      <br>UX/UI Design
     </div>
     <div class="col2">
-      Cybersecurity
+      <img class="width60 round-edges" src="/assets/p_codeo.png">
+      <br>Full Stack Development
     </div>
     <div class="col2">
-      Analytics & Data Visualization
+      <img class="width60 round-edges" src="/assets/p_cs.png">
+      <br>Cybersecurity
     </div>
-    <div class="col1 large-only"></div>
+    <div class="col2">
+      <img class="width60 round-edges" src="/assets/p_data.png">
+      <br>Analytics & Data Visualization
+    </div>
   </section>
   
-  <footer>
+  <section class="grid8 bg-darker a-center" style="padding: 2rem 0;">
+    <div class="col8">
+      <h2 class="underline">Get in touch!</h2>
+    </div>
+  </section>
+  
+  
+  <footer style="padding: 10vh 1rem; background: url(/assets/p_beach.png); background-size: cover; background-position: top center;">
     © 2020 WIOS Designs, a unit of 
     <a href="https://xpify.wiosdesigns.xyz/">Xpify Services Pvt. Ltd.</a>
   </footer>

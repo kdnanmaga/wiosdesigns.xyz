@@ -63,7 +63,7 @@ body {
 .col12{grid-column: span 12;}
 
 .rtl{direction: rtl;}
-
+.rtl * {direction: ltr;}
 img[class^="col"]{width: 100%;height: auto;padding:0;}
 
 a{color: currentColor;}
@@ -136,7 +136,7 @@ h3{font-size: 110%;}
 .btn{border:0.1rem solid var(--accent);display:inline-block;color: var(--accent);background:var(--dark);padding: 0.35rem 1rem 0.15rem 1rem;border-radius: 5rem;text-decoration: none;transition:background 0.2s,color 0.2s;}
 .btn:hover,.btn:focus{color:var(--darker);background:var(--accent);}
 .underline{border-bottom: 0.1rem solid var(--accent); margin-bottom: 1rem; display: inline-block; width: auto; padding: 0.5rem 1rem;}
-
+.paddingh0{padding-left: 0; padding-right: 0;}
 footer{
   background: var(--theme);
   color: var(--lighter);
