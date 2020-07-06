@@ -103,7 +103,7 @@ a{color: currentColor;}
 /* Home Page Background */
 div.home-bg{
   display: block;
-  position: fixed;
+  position: absolute;
   background: var(--darker);
   z-index: -10000;
   pointer-events: none;
