@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-157349003-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-157349003-1');
+  </script>
+  
+  
+  <title>Our Works - WIOS Designs</title>
+  <meta property="og:title" content="Our Works - WIOS Designs" />
+  <meta name="twitter:title" content="Our Works - WIOS Designs" />
+
+  <meta name="description" content="Digital portfolio of projects and product development works done by WIOS Desgins">
+  <meta property="og:description" content="Digital portfolio of projects and product development works done by WIOS Desgins">
+  <meta name="twitter:description" content="Digital portfolio of projects and product development works done by WIOS Desgins">
+  
+  <meta property="og:url" content="https://wiosdesigns.xyz/works.html" />
+
+  <meta property="og:image" content="/assets/home_bg.webp">
+  <meta property="twitter:image" content="/assets/home_bg.webp">
+  <meta name="twitter:image:alt" content="Background Image">
+  
+  <meta property="og:type" content="website" />
+  <meta name="twitter:card" content="summary"></meta>
+  
+  
+  <meta name="keywords" content="portfolio, product, ux, ui, design, development"/>
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8">
+  <meta name="theme-color" content="#161e24">
+  
+  <link rel="shortcut icon" href="/assets/favicon.png"/>
+  <style>
+    * {box-sizing: border-box;}
+
+    /* Color Scheme */
+    :root{
+      --darker: #161e24;
+      --dark: #2e4b57;
+      --theme: #3ba0b6;
+      --accent: #3d768c;
+      --light: #7fb9c8;
+      --lighter: #ffffff;
+    }
+
+    /* Fonts */
+    @font-face {
+      font-family: main;
+      font-display: swap;
+      src: url(/assets/hr.ttf);
+    }
+    body {
+      font-family: main;
+      font-size: 1rem;
+      padding: 0;
+      margin: 0;
+      background: var(--darker);
+      color: var(--light);
+      text-align: center;
+    }
+    header{
+      display: grid;
+      grid-template-columns: auto 1fr;
+      background: var(--darker);
+      justify-items: right;
+      max-height: 4.2rem;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      padding: 1rem;
+      align-items: center;
+      z-index: 20;
+      box-shadow: 2px 0px 10px rgba(0,0,0,0.3);
+    }
+    .header-icon{height: 2rem; width: auto;}
+    .header-home-link{text-decoration:none;padding:0;display:inline-block;}
+    header nav{
+      text-align: right;
+    }
+    header a{
+      color: var(--theme);
+      text-decoration: none;
+      padding: 0;
+      margin: 0;
+      vertical-align: 0.3rem;
+    }
+    main{
+      margin: 0;
+      margin-top: 4.2rem;
+      width: 100%;
+      display: inline-block;
+      max-width: 20cm;
+      padding: 0;
+      padding-bottom: 5rem;
+      background: var(--darker);
+      border-radius: 1rem;
+      text-align: left;
+      font-size: 1.25rem;
+    }
+    footer{
+      background: var(--dark);
+      color: var(--lighter);
+      padding: 1rem;
+      text-align: center;
+    }
+    footer>a{
+      color: inherit;
+    }
+    h1,h2,h3,h4,h5,h6{
+      font-weight: 200;
+      color: var(--lighter);
+    }
+    main>p>img{
+      width: 100%;
+      z-index: 0;     
+    }
+    ul{list-style:none;padding:0;}
+    ul>li::before{
+      content: "•";
+      color: var(--accent);
+      margin-right: 1rem;
+    }
+    ol{list-style:none;padding:0;counter-reset:ul-counter;}
+    ol>li::before{
+      content: counter(ul-counter);
+      counter-increment: ul-counter;
+      color: var(--accent);
+      margin-right: 1rem;
+    }
+    blockquote{
+      padding: 0;
+      margin: 0;
+    }
+    blockquote>p{
+      background: var(--darker);
+      border-left: 0.2rem solid var(--accent);
+      padding: 0.5rem 1rem;
+    }
+    main a{
+      color: var(--accent);
+    }
+    main>*{
+      padding: 0 1rem;
+    }
+    p.img{
+      padding: 0;
+      color: var(--lighter);
+      text-align: center;
+    }
+    a.btn{
+      text-decoration: none;
+      display: inline-block;
+      padding: 0.3rem 1rem 0.2rem 1rem;
+      border-radius: 10rem;
+      background: var(--theme);
+      color: var(--darker);
+      font-size: 80%;
+    }
+  </style>
+  
+</head>
+<body>
+  <header>
+    <a href="/" class="header-home-link">
+      <img class="header-icon" src="/assets/wiostext.png">
+    </a>
+    <nav>
+      <a href="mailto:hi@wiosdesigns.xyz">hi@wiosdesigns.xyz</a>
+    </nav>
+  </header>
+  
+  <main>
+    <h1>Our Works</h1>
+<blockquote><p>Our portfolio below is a curation of the best of our product development as well as customized services.</p>
+</blockquote>
+<h2>WarpZone</h2>
+<p><img src="/assets/warpzone.png" alt="WarpZone Screenshot">
+WarpZone is a shared dashboard for teams to organize 
+and access all their links such as those of Google Docs,
+Slides, Dashboards and so on.</p>
+<p>This was born out of our own needs with the team working remotely, 
+and collaborating on various platforms such as Google Suite, GitHub, 
+Airtable, and so on. We built a dashboard to prevent searching our emails and group chats for links</p>
+<p><a href="https://warpzone.tech" class="btn">Use the beta version now</a></p>
+<h2>FlashCart</h2>
+<p><img src="/assets/flashcart.png" alt="FlashCart Screenshots">
+FlashCart is a shopping app that lets customers browse and order via
+WhatsApp. Shopkeepers get to manage their catalog with MS Excel / Google Sheets.
+Our login-less experience is super fast and convenient for both customers and shop managers.</p>
+<p><a href="https://https://flc4.netlify.app/" class="btn">See it in action</a></p>
+<h2>Client project: PureScan AI</h2>
+<p><img src="/assets/purescan.png" alt="PureScan AI">
+PureScan AI is an Indian start-up working on food safety detection. We consult
+with them for website design and product development</p>
+<p><a href="https://purescanai.com/" class="btn">PureScan AI website</a></p>
+<h2>Contact Us</h2>
+<p><a href="https://wa.me/919901297970" class="btn">WhatsApp Us Now</a></p>
+
+  </main>
+  
+  <footer>
+    © 2020 WIOS Designs, a unit of 
+    <a href="https://xpify.wiosdesigns.xyz/">Xpify Services Pvt. Ltd.</a>
+  </footer>
+</body>
+</html>
+
